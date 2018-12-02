@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>Selección de equipos Videojuego</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+html {
+  background:#AED6F1;
+}
+
+.logo img{
+  width: 210px;
+  height: 195px;
+  margin-top: -200px;
+  margin-bottom: 5px;
+}
+
+.logo img:hover {
+  cursor: pointer;
+  background:#E1ECFF;
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+h2 {
+  color:white;
+    font-family: 'Kanit', sans-serif;
+  text-shadow: -2px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  font-size: 90px;
+  margin-top: 20px;
+  margin-left: 350px;
+  width: 600px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  animation-name: example;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+}
+
+h2:hover {
+  cursor: pointer;
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+h3 {
+  max-width: 100%;
+  font-size: 40px;
+  color:#F1C40F;
+  text-shadow: 2px 0px black, 0px 2px black;
+  font-family: 'Kanit', sans-serif;
+  margin-top:5px;
+  margin-left: -25px;
+}
+
+h3 span {
+  color: #2980B9;
+}
+
+.container1{
+  margin-left: 320px;
+}
+
+.container1 img {
+    width: 600px;
+    height: 210px;
+    border-radius: 20px;
+}
+
+.container1 img:hover {
+  cursor: pointer;
+  background:#E1ECFF;
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+.btn-display-right, .btn-display-left {
+    padding: 5px;
+    width: 80px;
+    font-weight: 600;
+    font-size: 20px;
+    color:black;
+    background-color:#ffffff;
+    border: 2px solid black;
+    margin-left: 150px;
+    cursor:pointer;
+
+}
+
+.btn-display-right:hover , .btn-display-left:hover {
+  background: yellow;
+  -webkit-transform:scale(1.3);transform:scale(1.3);
+    -webkit-box-shadow: 0px 0px 1px 1px #ec731e;
+}
+
+.btn-display-right:focus , .btn-display-left:focus {
+  width:100px;
+}
+
+footer p{
+  text-align: center;
+}
+
+</style>
+<body>
+
+<h2>Categorías</h2>
+
+<div class="logo">
+  <a href="homePage.html">
+  <img src="img/logo.jpg" alt="Logo de empresa">
+  </a>
+</div>
+
+<div class="container1">
+  <h3>Deportes <span>|</span> Conocimiento <span>|</span> Test Online </h3>
+  <img class="Slides1" src="img/deportes.jpg">
+  <img class="Slides1" src="img/cerebro.jpg">
+  <img class="Slides1" src="img/test.jpg">
+
+  <br>
+  <button class="btn-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+  <button class="btn-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+</div>
+
+<br><hr>
+  <footer>
+      <p class="copyright">
+          Todos los derechos reservados &copy;. Fabián Portillo González.
+      </p>
+  </footer>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["Slides1", "Slides2"]
+showDivs(1, 0);
+showDivs(1, 1);
+
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+<!-- http://www.jtech.ua.es/dadm/2011-2012/restringido/web/sesion02-apuntes.html -->
+</html>
+
+ 

@@ -1,0 +1,210 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Tabla de datos de ventas de división electrónica</title>
+  <link rel="stylesheet" type="text/css">
+
+</head>
+<style>
+body {
+  background-color:#EAF2F8;
+}
+
+.img-1{
+  height: 150px;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  position:relative;
+  margin-left:450px;
+  align-content: center;
+}
+
+.img-1 img{
+  border:1px solid black;
+  height: 180px;
+  width: 400px;
+  border-radius: 17px;
+}
+
+.img-1 img:hover {
+  background: yellow;
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+  -webkit-box-shadow: 0px 0px 1px 1px #ec731e;
+}
+
+h3 {
+  margin-bottom:10px;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  width: 700px;
+  background:#2755F0;
+  padding: 05px 10px;
+  margin-top: 10px;
+  bottom: 100px;
+  margin-left: 300px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+div.titulo-videos {
+  padding: 25px;
+  text-align: center;
+  font-size: 21px;
+  margin-bottom:-30px;
+}
+
+div.botones-video {
+  text-align: center;
+  margin-bottom:-15px;
+  margin-top: 14px;
+}
+
+.botones-video button {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.botones-video button:hover {
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+  -webkit-box-shadow: 0px 0px 1px 1px #ec731e;
+  cursor: pointer;
+}
+
+#video video{
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 650px;
+  height: 450px;
+  margin-left: 350px;
+  cursor: pointer;
+}
+
+.desc p{
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+  color: #152BC6;
+}
+
+.titulo-videos span {
+  font-size: 24px;
+  font-weight:bold;
+}
+
+footer p{
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+   <div class="contenedor">
+      <div class="img-1">
+        <a href="index.html">
+          <img src="img/bandera.jpg" alt="imagen encabezado seccion de videos" >
+        </a>
+      </div><!--.logo-->
+   </div>
+   <!--.contenedor-->
+</header>
+
+<section>
+  <h3>Universidades por Ciudad</h3>
+    <div class="titulo-videos">
+      <span>Guadalajara, Jalisco. <br>Universidad de Guadalajara</span>
+    </div>
+
+    <div id="video">
+      <video controls preload autoplay>
+          <source src="video/video-udg.mp4" type="video/mp4">
+          <source src="video/video-udg.ogv" type="video/ogg">
+          <source src="video/video-udg.webm" type="video/webm">
+      </video>
+      <div class="botones-video"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Grande</button>
+        <button onclick="makeSmall()">Pequeño</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+      </div>
+      <div class="desc">
+        <p>Guadalajara, conocida como la tierra del tequila y el mariachi, tradiciones y cultura.<br> Cuenta con gran oferta educativa y dirigida a distintos estratoc económicos.<br> Ciudad sólida en tecnología e innovación.</p>
+        <hr>
+      </div>
+    </div>
+
+
+    <div class="titulo-videos">
+      <span>Ciudad de México.<br> Universidad Nacional Autónoma de México.</span>
+    </div>
+    <div id="video">
+      <video controls preload autoplay>
+          <source src="video/video-unam.mp4" type="video/mp4">
+          <source src="video/video-unam.ogv" type="video/ogg">
+          <source src="video/video-unam.webm" type="video/webm">
+      </video>
+      <div class="botones-video"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Grande</button>
+        <button onclick="makeSmall()">Pequeño</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+      </div>
+      <div class="desc">
+        <p>Capital de la República Mexicana y la ciudad más poblada del país.<br>Cuenta con muchas universidades públicas y privadas,<br> destacando la UNAM, Institución Pública más importante del país.</p>
+        <hr>
+      </div>
+    </div>
+
+    <div class="titulo-videos">
+      <span>Monterrey, Nuevo León. <br>Tecnológico de Monterrey.</span>
+    </div>
+    <div id="video">
+      <video controls preload autoplay>
+          <source src="video/video-tecm.mp4" type="video/mp4">
+          <source src="video/video-tecm.ogv" type="video/ogg">
+          <source src="video/video-tecm.webm" type="video/webm">
+      </video>
+      <div class="botones-video"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Grande</button>
+        <button onclick="makeSmall()">Pequeño</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+      </div>
+      <div class="desc">
+        <p>Monterrey, ciudad capital del Estado de Nuevo León, ubicado al noreste de México.<br>Ciudad sede del Tecnológico de Monterrey, la Universidad Privada más destacada del país.<br>Urbe emprendedora y con mucho auge financiero y económico.</p>
+        <hr>
+      </div>
+    </div>
+<script> 
+  var myVideo = document.getElementById("video"); 
+
+  function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+  }  
+
+  function makeBig() { 
+    myVideo.width = 560; 
+  } 
+
+  function makeSmall() { 
+    myVideo.width = 320; 
+  } 
+
+  function makeNormal() { 
+    myVideo.width = 420; 
+  } 
+</script> 
+ </section>
+
+</body>
+</html>

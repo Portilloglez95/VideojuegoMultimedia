@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+<style>
+
+html {
+  background:#AED6F1;
+}
+
+.logo img{
+  width: 210px;
+  height: 195px;
+  margin-top: -400px;
+  margin-bottom: 115px;
+}
+
+.logo img:hover {
+  cursor: pointer;
+  background:#E1ECFF;
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+
+h2 {
+  color:#2980B9;
+  text-shadow: -2px 0 black, 0 1px black, 2px 0 black, 0 -1px black;
+  font-size: 90px;
+  margin-top: 20px;
+  margin-left: 440px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  text-transform: uppercase;
+
+}
+
+h2:hover {
+  cursor: pointer;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 50%;
+  }
+
+  to {
+  font-size: 200%;
+  margin-left: 25%;
+  width: 150%;
+  }
+}
+
+h3 {
+  width: 200px;
+  font-size: 40px;
+  color:#F1C40F;
+  text-shadow: 2px 0px black, 0px 2px black;
+  font-family: 'Kanit', sans-serif;
+  margin-top:-35px;
+  text-decoration: underline;
+
+}
+
+.container1, .container2 {
+  margin-left: 320px;
+}
+
+.container1 img, .container2 img {
+    width: 600px;
+    height: 210px;
+    border-radius: 20px;
+}
+
+.container1 img:hover, .container2 img:hover {
+  cursor: pointer;
+  background:#E1ECFF;
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+.btn-display-right, .btn-display-left {
+    padding: 5px;
+    width: 80px;
+    font-weight: 600;
+    font-size: 20px;
+    color:black;
+    background-color:#ffffff;
+    border: 2px solid black;
+    margin-left: 150px;
+    cursor:pointer;
+
+}
+
+.btn-display-right:hover , .btn-display-left:hover {
+  background: yellow;
+  -webkit-transform:scale(1.3);transform:scale(1.3);
+    -webkit-box-shadow: 0px 0px 1px 1px #ec731e;
+}
+
+.btn-display-right:focus , .btn-display-left:focus {
+  width:100px;
+}
+
+.img-central img {
+  margin-left: 500px;
+  width:250px;
+  height:200px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+  border-radius: 150px;
+}
+
+.img-central img:hover {
+border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 20px 20px #ec731e;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+cursor: pointer;
+}
+
+footer p{
+  text-align: center;
+}
+
+</style>
+<body>
+
+<div class="contenedor-principal">
+
+<h2>Torneo nacional</h2>
+
+<div class="logo">
+  <a href="homePage.html">
+  <img src="img/logo.jpg" alt="Logo de empresa">
+  </a>
+</div>
+
+<div class="container1">
+  <h3>Local</h3>
+  <img class="Slides1" src="img/IBERO-logo.png">
+  <img class="Slides1" src="img/IPN-logo.png">
+  <img class="Slides1" src="img/UNAM-logo.png">
+  <img class="Slides1" src="img/UAM-logo.jpg">
+  <img class="Slides1" src="img/ITAM-logo.png">
+  <img class="Slides1" src="img/CETI-logo.png">
+  <img class="Slides1" src="img/ITESO-logo.png">
+  <img class="Slides1" src="img/UAG-logo.jpg">
+  <img class="Slides1" src="img/UDG-logo.png">
+  <img class="Slides1" src="img/UNIVA-logo.jpg">
+  <img class="Slides1" src="img/TEC-logo.jpg">
+  <img class="Slides1" src="img/TECMI-logo.png">
+  <img class="Slides1" src="img/UANL-logo.png">
+  <img class="Slides1" src="img/UDEM-logo.png">
+  <img class="Slides1" src="img/URRE-logo.jpeg">
+  <br>
+  <button class="btn-display-left" onclick="plusDivs(-1, 0)">&#10094;</button>
+  <button class="btn-display-right" onclick="plusDivs(1, 0)">&#10095;</button>
+</div>
+<hr><br>
+
+<div class="img-central">
+  <img class="img-centro" src="img/versus.jpg">
+</div>
+<hr><br>
+
+<div class="container2">
+  <h3>Visitante</h3>
+  <img class="Slides2" src="img/IBERO-logo.png">
+  <img class="Slides2" src="img/IPN-logo.png">
+  <img class="Slides2" src="img/UNAM-logo.png">
+  <img class="Slides2" src="img/UAM-logo.jpg">
+  <img class="Slides2" src="img/ITAM-logo.png">
+  <img class="Slides2" src="img/CETI-logo.png">
+  <img class="Slides2" src="img/ITESO-logo.png">
+  <img class="Slides2" src="img/UAG-logo.jpg">
+  <img class="Slides2" src="img/UDG-logo.png">
+  <img class="Slides2" src="img/UNIVA-logo.jpg">
+  <img class="Slides2" src="img/TEC-logo.jpg">
+  <img class="Slides2" src="img/TECMI-logo.png">
+  <img class="Slides2" src="img/UANL-logo.png">
+  <img class="Slides2" src="img/UDEM-logo.png">
+  <img class="Slides2" src="img/URRE-logo.jpeg">
+  <br>
+  <button class="btn-display-left" onclick="plusDivs(-1, 1)">&#10094;</button>
+  <button class="btn-display-right" onclick="plusDivs(1, 1)">&#10095;</button>
+</div><!-- fin. container2 -->
+</div><!-- fin. contenedor principal-->
+
+<br><hr>
+  <footer>
+      <p class="copyright">
+          Todos los derechos reservados &copy;. Fabián Portillo González.
+      </p>
+  </footer>
+
+<script>
+var slideIndex = [1,1];
+var slideId = ["Slides1", "Slides2"]
+showDivs(1, 0);
+showDivs(1, 1);
+
+function plusDivs(n, no) {
+  showDivs(slideIndex[no] += n, no);
+}
+
+function showDivs(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
+/* -- http://www.jtech.ua.es/dadm/2011-2012/restringido/web/sesion02-apuntes.html -->
+*/ 

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="Free Web tutorials on HTML and CSS"><!--palabras clave para los buscadores: -->
+    <meta name="keywords" content="Natural Company, Champú natural, Jalisco, barato "> <!-- descripción de su página web: -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--configuración de la ventana gráfica para que su sitio web se vea bien en todos los dispositivos: -->
+    <meta charset="utf-8">
+    <title>Venta de artículos de naturales para tu cuidado</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+
+html {
+  background-color:#EFF4F9;
+}
+
+  h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    background:#1C4FCD;
+    padding: 05px 10px;
+    margin-top: 10px;
+    bottom: 100px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+  .contenido img {
+    border:2px solid #276CCA;
+  }
+
+fieldset {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  border:solid 2px #276CCA;
+}
+
+fieldset span {
+  color: #276CCA;
+  font-weight: bold;
+}
+
+h5 {
+  text-align: center;
+  font-size: 40px;
+  background:#276CCA;
+  width: 700px;
+  color:#ffffff;
+  border-radius: 20px;
+}
+
+.botones-modo-juego .btn-juego2, .btn-juego3{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffffff;
+  background-color:#1635A5;
+  border-radius: 100px;
+  border: 2px solid #0016b0;
+  margin-top: 20px;
+  margin-left:800px;
+  position: relative;
+  float: left;
+}
+
+.botones-modo-juego .btn-juego2:hover ,.btn-juego3:hover {
+  cursor: pointer;
+  background:#6A93FF;
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+
+.botones-modo-juego .btn-juego2{
+  margin-left: 20px;
+}
+
+.botones-modo-juego .btn-juego3{
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.btn-continuar {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 55px;
+  color:black;
+  background-color:#F1C40F;
+  border-radius: 56px;
+  border: 2px solid yellow;
+  margin-top: 60px;
+  margin-left:270px;
+  position: relative;
+  float: left;
+}
+
+.btn-continuar:hover {
+  cursor: pointer;
+  background:#6A93FF;
+  -webkit-transform:scale(1.1);transform:scale(1.1);
+}
+    </style>
+  </head>
+  <body>
+    <header>
+    <div class="logo">
+      <a href="homePage.html">
+        <img src="img/logo.jpg" alt="Logo de empresa">
+      </a>
+    </div>
+    </header>
+
+   <div class="navegacion">
+        <nav>
+            <ul class="clearfix">
+                <li><a href="homePage.html">Inicio</a></li>
+                <li><a href="#">Nosotros</a>
+                  <ul>
+                    <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+                  </ul>
+                </li>
+                
+                <li><a href="#">Novedades</a>
+                    <ul>
+                      <li><a href="publicaciones.html">Próximamente</a></li>
+                    </ul>
+                </li>
+              <!--
+                <li><a href="#">Tienda</a>
+                    <ul>
+                      <li><a href="tienda.html">Compras Online</a></li>
+                    </ul>
+                </li>
+              -->
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Avisos</a>
+                    <ul>
+                       <li><a href="politica.html">Política de privacidad</a></li>
+                      <li><a href="terminos.html">Términos y condiciones</a></li>
+                      <li><a href="devoluciones.html">Compras y devoluciones</a></li>
+                    </ul>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="contenido">
+        <main>
+            <article>
+              <div class="imagen-principal">
+                <img src="https://media.giphy.com/media/94DBMnpVEbJLy/giphy.gif" alt="cepillo de dientes">
+              </div>
+              <fieldset>Somos una empresa dedicada al <span>desarrollo</span> y <span>venta</span> de video juegos <b>educativos</b>, <b>deportivos</b> y  <b>culturales</b>.</fieldset>
+              <h3>NUESTROS JUEGOS</h3>
+            </article>
+            <article>
+                <h2>Deportes</h2>
+                <a href="categoria.html">
+                <img class="img-descripcion" src="img/deportes.jpg" alt="imagen deportes">
+                </a>
+                <p>Representa a la universidad de tu preferencia. Intenta hazañas impensables y convéncete de lo que eres capaz de hacer. Puedes encontrar deportes variados y divertidos. </p>
+            </article>
+            <br><br>
+            <article>
+                <h2>Conocimiento </h2>
+                <a href="categoria.html">
+                <img class="img-descripcion" src="img/cerebro.jpg" alt="imagen conocimiento">
+                </a>
+                <p>Pon a prueba tus habilidades académicas que creiste olvidar en la escuela. Participa en exámenes académicos desde Ciencia, matemáticas, inglés o redacción. <br> Demuestrale a todos que tu universidad tiene a los mejores estudiantes.</p>
+            </article>
+            <article>
+                <br><br>
+                <h2>Test Online </h2>
+                <a href="categoria.html">
+                <img class="img-descripcion" src="img/test.jpg" alt="imagen test online">
+                </a>
+                <p>Demuestra tu verdadera destreza, velocidad y capacidad de resolver desde problemas comunes a complejos en un tiempo reducido.
+                Ponte a prueba con gente de todo el país y representa a tu Universidad de la mejor manera.</p>
+                <hr>
+                <h4>Categorías: </h4>
+                <ul>
+                  <li>Sudoku</li>
+                  <li>Exámenes Online</li>
+                  <li>Algoritmos</li>
+                </ul>
+            </article>
+
+            <article>
+            <hr><hr><br>
+            <h5>¿QUIERES INTENTARLO?</h5>
+            <div class="botones-modo-juego">
+              <a href="torneoRegional.html">
+              <button class="btn-juego2">Torneo Regional</button>
+              <a href="torneoNacional.html">
+              <button class="btn-juego3">Torneo Nacional</button>
+            </div>
+            <!-- NOTA: 
+              Fecha 20-11-18: Tengo problemas con los enlaces de los botones,
+              ya que al dar click en ellos redirige a una página diferente. Y uno de ellos no funciona. 
+            -->
+            <a href="modoDeJuego.html">
+            <button class="btn-continuar">Jugar</button>
+            </article>
+        </main>
+
+        <aside class="sidebar" >
+            <h2>Enlaces externos</h2>
+            <ul>
+              <!-- PENDIENTE <li><a href="novedades.html" target="_blank">Novedades</a></li> -->
+              <li><a href="galeriaNacional.html" target="_blank">Galería Universidades Nacionales</a></li>
+              <li><a href="galeriaRegional.html" target="_blank">Galería Universidades Regionales</a></li>
+              <li><a href="videos.html" target="_blank">Vídeos</a></li>
+            </ul>
+
+              <br>
+            <div class="img-aside">
+              <img src="https://media.giphy.com/media/y0NFayaBeiWEU/giphy.gif" alt="gif de videojuego Timmy Turner"><img src="https://media.giphy.com/media/JhfcFoCNTuIH6/giphy.gif" alt="gif de control de videojuego">
+            </div>
+        </aside>
+    </div> <!--contenido-->
+
+
+    <footer>
+
+      <div class="contenedor">
+          <div class="nosotros">
+              <h2>Sobre nosotros</h2>
+              <p>
+                Empresa 100% mexicana dentro de la temática de entretenimiento y videojuegos. <br>Contamos con 3 años de experiencia brindando
+                la mejor calidad para nuestros usuarios.
+              </p>
+          </div>
+          
+          <div class="menu">
+            <h2>Menú de navegación</h2>
+            <nav>
+              <a href="homePage.html">Inicio</a>
+              <a href="nosotros.html">Nosotros</a>
+              <a href="publicaciones.html">Blog</a>
+              <a href="contacto.html">Contacto</a>
+              <a href="politica.html">Avisos</a>
+            </nav>
+          </div>
+      </div>
+
+      <p class="copyright">
+          Todos los derechos reservados &copy;. Fabián Portillo González. UDG.
+      </p>
+    </footer>
+
+  </body>
+</html>
